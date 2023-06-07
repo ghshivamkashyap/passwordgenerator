@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    225deg,
+    hsl(240deg 51% 33%) 0%,
+    hsl(215deg 100% 29%) 12%,
+    hsl(210deg 100% 32%) 23%,
+    hsl(206deg 100% 34%) 34%,
+    hsl(202deg 100% 36%) 45%,
+    hsl(197deg 100% 37%) 56%,
+    hsl(193deg 100% 38%) 67%,
+    hsl(189deg 100% 38%) 78%,
+    hsl(184deg 88% 41%) 89%,
+    hsl(180deg 52% 54%) 100%
+  );
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+}
+
+.datacopy {
+  background-color: transparent;
+}
+
+.copyicon{
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: aliceblue;
+  opacity: 0.75;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.display {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 1.15rem 1rem;
+  color: yellowgreen;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding-right: 3.25rem;
+}
+
+.display::placeholder {
+  position: absolute;
+  color: yellowgreen;
+}
+
+.displaycontainer {
+  justify-content: space-between;
+  position: relative;
+  background-color: hsl(210deg 100% 32%);
+  border-radius: 1rem;
+  border-bottom: 0.35 solid hsl(215deg 100% 29%);
+  margin: 0.8rem 0;
+  padding-top: 0.35rem;
+}
+
+.inputcontainer {
+  border-radius: 1rem;
+  background-color: hsl(210deg 100% 32%);
+  /* margin: 0.8rem 0; */
+  border-bottom: 0.35 solid hsl(215deg 100% 29%);
+  /* margin-bottom: 10px; */
+  width: 100%;
+  padding: 1rem;
+  /* padding-bottom: 10px; */
+}
+
+.passwordcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passwordlenght {
+  color: white;
+  font-weight: bold;
+}
+
+/* .data-length-number {
+  font-weight: bold;
+  color: yellowgreen;
+} */
+
+.passwordcontainer p:nth-child(2) {
+  font-weight: bold;
+  color: yellowgreen;
+}
+
+.strengthcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  /* box-shadow:'0px 0px 12px 1px ${color}' */
+}
+
+.genratebtn {
+  width: 100%;
+  cursor: pointer;
+  background-color: hsl(180deg 52% 54%);
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 8px;
+  color: darkolivegreen;
+  font-weight: bold;
+  font-size: medium;
+  border: 0.1rem solid seagreen;
+}
+
+.datacopybtn {
+  background-color: transparent;
+  border: none;
+  color: yellowgreen;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0 1rem;
+}
+
+.check input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid seagreen;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+.check input:checked {
+  background-color: rgb(83, 138, 107);
+}
+
+.check input:checked::before {
+  content: "✔";
+  position: absolute;
+  top: -50%;
+  /* left: %; */
+  font-size: 1.5rem;
+  color: white;
+}
+
+.check label {
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.slider {
+  appearance: none;
+  width: 100%;
+  /* border: n ; */
+  cursor: pointer;
+  background-color:transparent;
+  border: 1px solid hsl(180, 81%, 41%);
+  border-radius: 1rem;
+  height: 1rem;
+  margin-top: 2rem;
+  outline: none;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(hsl(180, 81%, 41%), hsl(180, 81%, 41%));
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: seagreen;
+  outline: none;
+  border: none;
+  /* margin-top: -3px; */
+  transition: all 100ms ease-in;
+}
